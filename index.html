@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<title>Google Firebase</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="login_div" class="main-div">
+            <h3>
+                Firebase Web Login Example
+            </h3>
+            <input type="email" placeholder="Enter Email Here" id="emailField" />
+            <input type="password" placeholder="Enter Password Here" id="passwordField" />
+
+            <button onClick=login()>Login to Account</button>
+        </div>
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p>Welcome to Firebase web login Example. You're currently logged in.</p>
+            <button>Logout</button>
+        </div>
+    </div>
+    
+
+
+
+<!-- Firebase code -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDAEv1rwTMjA0y3LXd7EuNAPq582Q6LzKM",
+        authDomain: "drone-project-658e3.firebaseapp.com",
+        projectId: "drone-project-658e3",
+        storageBucket: "drone-project-658e3.appspot.com",
+        messagingSenderId: "620594696487",
+        appId: "1:620594696487:web:6b31f19e7e5cee5b281902"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+<!-- adding javascript -->
+    <script src="index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

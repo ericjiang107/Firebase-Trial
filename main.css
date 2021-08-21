@@ -1,0 +1,46 @@
+body {
+    padding: 0px;
+    margin: 0 px;
+    background: #fff;
+}
+
+.main-div, .loggedin-div {
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-div button, .loggedin-div button {
+    background: #5d8ffc;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    /* -webkit-transition: 0.3s;
+    -moz-transition: 0.3s; */
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+    background: #fff;
+    color: #5dff;
+    border: 1px solid black;
+}
+
+.main-div input:focus {
+    border: 1px solid black;
+}
+
